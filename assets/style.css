@@ -1,0 +1,52 @@
+.jumbo{
+	
+	background: url(../b.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding : 8%;
+
+
+
+}
+
+body{
+	background-color: black;
+	margin: auto;
+}
+
+#find{
+	text-align: center;
+}
+
+.form{
+	background-color: rgba(115, 124, 124, 0.75);
+	text-align: center;
+	padding-top: 1%;
+
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    
+}
+
+.na{
+	position: fixed;
+}
+/*div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}*/
