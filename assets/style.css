@@ -1,6 +1,14 @@
+
+.jumbo-home {
+  background: url(images/car.jpeg) no-repeat center center fixed;
+}
+
+.jumbo-parts{
+  background: url(images/engine.jpeg) no-repeat center center fixed; 
+}
+
+
 .jumbo{
-	
-	background: url(images/engine.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,9 +16,14 @@
   text-align: center;
   color: white;
   padding : 8%;
+}
 
+nav {
+  margin: 10px;
+}
 
-
+h1 {
+  text-shadow: 2px 2px 4px #000000;
 }
 
 body{

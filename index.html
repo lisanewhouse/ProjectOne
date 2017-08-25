@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Auto Parts</title>
+	<title>IdleCare</title>
 	<!-- Latest compiled and minified CSS -->
-	<!-- <script
+	<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
- -->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Optional theme -->
@@ -23,89 +23,44 @@
 
   <link rel="stylesheet" type="text/css" href="assets/style.css">
 
-  <script type="text/javascript" src="jquery-1.8.3.js"></script>
+  <!-- <script type="text/javascript" src="jquery-1.8.3.js"></script> -->
 </head>
 
 
 <body>
-<div class="container">
 
  <!--heading -->
-	<nav class="navbar navbar-inverse ">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Auto Parts</a>
+        <a class="navbar-brand" href="index.html">IdleCare</a>
       </div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Find Parts
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#find">page</a></li> 
-          </ul>
-        </li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="assets/parts.html">Find Parts</a></li>
+        <li><a href="assets/about.html">About</a></li>
+        <li><a href="assets/contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- body -->
-  <div class="row" >
-    <div class="col-sm-12 jumbotron jumbo">
-      <h1>Auto Parts</h1>
-      <!-- begin form -->
-		  <div class="row">
-        <div class="col-sm-2"></div>
-		    <div class="col-sm-8  form">
-          <h3>Fill the form </h3>
-          <form class="form-horizontal">
-            <!-- input vin -->
-            <div class="form-group row">
-              <div class="col-sm-2">
-                <label class="control-label" for="vin">VIN:</label>
-              </div>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="vin" placeholder="Enter VIN">
-              </div>
-            </div>
-            <!-- input part type/number -->
-            <div class="form-group row">
-              <div class="col-sm-2">
-                <label class="control-label" for="part">Select Part:</label>
-                </div>
-              <div class="col-sm-10"> 
-                <select class="form-control" id="part">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-              </div>
-            </div>
-            <!-- submit buttons row-->  
-            <div class="form-group row"> 
-              <div class="col-sm-12">
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="submit" id="add" class="btn btn-primary">Add Part</button>
-              </div>
-            </div>
-          </form>
-		    </div>
+  <div class="container container-fluid">
+    <div class="row" >
+      <div class="col-sm-12 jumbotron jumbo jumbo-home">
+
+          	<!-- Trying out a login -->
+            <form class="form" method="post" action="#">
+              <h2>Login Form</h2>
+              <label>Email :</label>
+              <input type="text" name="demail" id="email">
+              <label>Password :</label>
+              <input type="password" name="password" id="password">
+              <input type="button" name="login" id="login" value="Login">
+            </form>
       </div>
     </div>
-  </div>
-
-
-	<!-- Trying out a login -->
-  <form class="form" method="post" action="#">
-    <h2>Login Form</h2>
-    <label>Email :</label>
-    <input type="text" name="demail" id="email">
-    <label>Password :</label>
-    <input type="password" name="password" id="password">
-    <input type="button" name="login" id="login" value="Login">
-  </form>
+  </div>   
 
 </div>
 
