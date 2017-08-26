@@ -7,6 +7,14 @@
   background: url(images/engine.jpeg) no-repeat center center fixed; 
 }
 
+.jumbo-contact {
+  background: url(images/engine.jpeg) no-repeat center center fixed; 
+}
+
+.jumbo-about {
+  background: url(images/mech.jpg) no-repeat center center fixed; 
+
+}
 
 .jumbo{
   -webkit-background-size: cover;
@@ -16,14 +24,20 @@
   text-align: center;
   color: white;
   padding : 8%;
+  margin-top: 50px;
 }
 
 nav {
   margin: 10px;
+  padding: 5px;
 }
 
-h1 {
+h1, {
   text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  text-align: left;
 }
 
 body{
@@ -31,9 +45,15 @@ body{
 	margin: auto;
 }
 
+.panel {
+  background-color: rgba(115, 124, 124, 0.75);
+  padding:5%;
+}
+
 #find{
 	text-align: center;
 }
+
 
 .form{
 	background-color: rgba(115, 124, 124, 0.75);
