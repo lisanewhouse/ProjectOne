@@ -21,6 +21,8 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Oleo+Script|Sonsie+One" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="assets/style.css">
 
   <!-- <script type="text/javascript" src="jquery-1.8.3.js"></script> -->
@@ -49,21 +51,24 @@
     <div class="row" >
       <div class="col-sm-12 jumbotron jumbo jumbo-home">
 
-          	<!-- Trying out a login -->
-            <form class="form" method="post" action="#">
-              <h2>Login Form</h2>
-              <label>Email :</label>
-              <input type="text" name="demail" id="email">
-              <label>Password :</label>
-              <input type="password" name="password" id="password">
-              <input type="button" name="login" id="login" value="Login">
+          <div class="wrapper">
+            <form class="form-signin">       
+              <h2 class="form-signin-heading">Please login</h2>
+              <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+              <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+              </label>
+              <button class="btn btn-lg btn-default btn-block" type="submit">Login</button>   
             </form>
+          </div>
+	
           <br><br><br><br><br>
       </div>
     </div>
   </div>   
 
-
+ 
 <script src="assets/logic.js"></script>
 </body>
 </html>
