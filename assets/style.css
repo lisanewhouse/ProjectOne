@@ -24,7 +24,6 @@
   text-align: center;
   color: white;
   padding : 8%;
-  margin-top: 50px;
 }
 
 .navbar-brand {
@@ -34,14 +33,15 @@
 
 
 nav {
-  margin: 10px;
+  margin: 0px 0px 10px 0px;
   padding: 5px;
   font-family: 'Oleo Script', cursive;
-  font-size: medium;
+  font-size: large;
 }
 
-h1, {
+h1{
   text-shadow: 2px 2px 4px #000000;
+  font-family: 'Oleo Script', cursive;
 }
 
 p {
@@ -51,6 +51,7 @@ p {
 body{
 	background-color: black;
 	margin: auto;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .panel {
@@ -90,16 +91,18 @@ body{
   color: black;
 }
 
-.form-signin {
+.form-signin, .form-signup {
   max-width: 380px;
   padding: 15px 35px 45px;
   margin: 0 auto;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,0.1);  
-
+}
   .form-signin-heading,
+  .form-signup-heading,
   .checkbox {
     margin-bottom: 30px;
+    font-family: 'Oleo Script', cursive;
   }
 
   .checkbox {
