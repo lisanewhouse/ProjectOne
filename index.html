@@ -26,13 +26,12 @@
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 
-  <!-- <script type="text/javascript" src="jquery-1.8.3.js"></script> -->
 </head>
 
 
 <body>
 
- <!--heading -->
+ <!-- fixed navigation bar -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -46,14 +45,13 @@
       </ul>
     </div>
   </nav>
-  <br>
-  <br>
 
   <!-- body -->
   <div class="container container-fluid">
     <div class="row" >
       <div class="col-sm-12 jumbotron jumbo jumbo-home">
         <div class="row">
+          <!-- sign in form -->
           <div class="wrapper col-sm-6">
             <form class="form-signin">       
               <h2 class="form-signin-heading">Please login</h2>
@@ -66,6 +64,7 @@
               <button class="btn btn-lg btn-default btn-block" type="submit">Login</button>
             </form>
           </div> 
+          <!-- sign up form -->
           <div class="wrapper col-sm-6">
             <form class="form-signup">
               <h3>Don't have an account?<br>Sign up here:</h3>
@@ -75,9 +74,19 @@
         </div> 
       </div>
     </div>
-  </div>   
+  </div>  
 
-  
+  <footer class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav footer">
+        <li><a href="">©2017 PseudoINC</a></li>
+        <li><a href=""><span class="glyphicon glyphicon-thumbs-up"></span></a></li>
+        <li><a href=""><span class="glyphicon glyphicon-expand"></span></a></li>
+        <li><a href=""><span class="glyphicon glyphicon-envelope"></span></a></li>
+      </ul>
+    </div>
+  </nav> 
+<!-- link to local js -->
 <script src="assets/logic.js"></script>
 </body>
 </html>

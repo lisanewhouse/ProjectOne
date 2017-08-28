@@ -31,6 +31,10 @@
   font-size: 200%;
 }
 
+footer {
+  padding: 0px 100px 0px 100px;
+  color: white;
+}
 
 nav {
   margin: 0px 0px 10px 0px;
