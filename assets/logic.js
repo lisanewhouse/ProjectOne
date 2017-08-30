@@ -273,13 +273,7 @@ var final1 = final.join(' '); // array turned back into a string
      if(vehicleID.includes("4YD") === true && vehicleID.charAt(9) == "7" && vehicleID.charAt(3) == "F" && serialNumber > 770000 && serialNumber < 779999 && vehicleID.substring(4,7) === "345") {
     final1 = "2007 KEYSTONE TRAILERS M-345 EVEREST FIFTH WHEEL";
   }   
-    /*
-4YDF345287E771495 = 2007 Keystone Rv Everest Fifth Wheel
-4YD = Keystone
-F = Fifth Wheel
-7 = 2007 
-770000 - 779999 = Everest  
-    */
+    
     
      if(vehicleID.includes("4YD") === true && vehicleID.charAt(9) == "6") {
     final1 = "2006 KEYSTONE TRAILERS";
