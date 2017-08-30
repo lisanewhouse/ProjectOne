@@ -53,23 +53,45 @@
   
  
 <div class="container container-fluid">
+  <div class="row">
+    <div class="col-sm-12 jumbotron jumbo jumbo-parts">
+      <!-- youtube video div??? -->
+      <div id="player"></div>
+      <!-- vin decoder: OPERATIONAL! F YEAH! -->
+      <form class="form">
+        <h1> VIN Decoder </h1>  
+        <input id= "vin"> </input>
+        <br>
+        <a class="btn btn-default" id ="search"> Go </a>
+        <a class="btn btn-default" id="reset"> Reset </a>
+        <br>
+        <br>
+        <img id="off" src="images/cars.jpeg"></img>
+        <img id="trlr" src="images/cars.jpeg"></img>
+        <img id="mtrhme" src="images/cars.jpeg"></img>
+        </img>
+        <img id ="car" src="images/cars.jpeg"></img>      
+        <img id ="mc" src="images/cars.jpeg"></img>
+        <img id ="err" src="http://www.tsl-timing.com/Images/error.png" height = 50px weight = 50px></img>
+        <br>
+        <br>
+        <div id="results"> </div>
+        <br>
+        <!-- <a class="btn btn-default" id = 'google'> </a>
+        <a class = "btn btn-default" id = 'NADAshow'> </a>
+        --> 
+      </form>
+    </div>
+  </div>
+  
   <div class="row" >
     <div class="col-sm-12 jumbotron jumbo jumbo-parts">
       <!-- begin form -->
 		  <div class="row">
         <div class="col-sm-2"></div>
 		    <div class="col-sm-8  form">
-          <h2>Please enter or select your VIN</h2>
+          <h2>Enter here:</h2>
           <form class="form-horizontal">
-            <!-- input vin -->
-            <div class="form-group row">
-              <div class="col-sm-2">
-                <label class="control-label" for="vin">VIN:</label>
-              </div>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="vin-input" placeholder="Enter VIN">
-              </div>
-            </div>
             <!-- input part type/number -->
             <div class="form-group row">
               <div class="col-sm-2">
@@ -96,37 +118,19 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-12 jumbotron jumbo jumbo-parts">
-      <!-- youtube video div??? -->
-      <div id="player"></div>
-      <!-- vin decoder: OPERATIONAL! F YEAH! -->
-      <form class="form">
-      <h1> VIN Decoder </h1>  
-      <input id= "vin"> </input>
-      <br>
-      <a class="btn btn-default" id ="search"> Go </a>
-      <a class="btn btn-default" id="reset"> Reset </a>
-      <br>
-      <br>
-      <img id="off" src="images/cars.jpeg"></img>
-      <img id="trlr" src="images/cars.jpeg"></img>
-      <img id="mtrhme" src="images/cars.jpeg"></img>
-      </img>
-      <img id ="car" src="images/cars.jpeg"></img>      
-      <img id ="mc" src="images/cars.jpeg"></img>
-      <img id ="err" src="http://www.tsl-timing.com/Images/error.png" height = 50px weight = 50px></img>
-      <br>
-      <br>
-      <div id="results"> </div>
-      <br>
-      <!-- <a class="btn btn-default" id = 'google'> </a>
-      <a class = "btn btn-default" id = 'NADAshow'> </a>
-      </form> -->
-
-    </div>
-  </div>
 </div>
+
+
+<footer class="navbar navbar-inverse navbar-fixed-bottom">
+   <div class="container-fluid">
+    <ul class="nav navbar-nav footer">
+      <li><a href="">©2017 PseudoINC</a></li>
+      <li><a href=""><span class="glyphicon glyphicon-thumbs-up"></span></a></li>
+      <li><a href=""><span class="glyphicon glyphicon-expand"></span></a></li>
+      <li><a href=""><span class="glyphicon glyphicon-envelope"></span></a></li>
+    </ul>
+  </div>
+</footer> 
 
 
 <script src="logic.js"></script>
