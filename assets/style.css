@@ -58,6 +58,10 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 
+#results {
+  display: none;
+}
+
 .panel {
   background-color: rgba(115, 124, 124, 0.75);
   padding:5%;
