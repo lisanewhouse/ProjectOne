@@ -1,63 +1,86 @@
 $(document).ready(function(){
 
+
 // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBzW335U61ATVv2yKRT8g6WbW4AHApacOQ",
-    authDomain: "idlecare-786a2.firebaseapp.com",
-    databaseURL: "https://idlecare-786a2.firebaseio.com",
-    projectId: "idlecare-786a2",
-    storageBucket: "",
-    messagingSenderId: "231304815984"
-  };
-  firebase.initializeApp(config);
+var config = {
+	apiKey: "AIzaSyBzW335U61ATVv2yKRT8g6WbW4AHApacOQ",
+	authDomain: "idlecare-786a2.firebaseapp.com",
+	databaseURL: "https://idlecare-786a2.firebaseio.com",
+	projectId: "idlecare-786a2",
+	storageBucket: "",
+	messagingSenderId: "231304815984"
+};
+firebase.initializeApp(config);
+
+var contactInfo = firebase.database();
+
+$("#submit").on("click", function() {
+	var name = $("#name_input").val().trim();
+	var email = $("#mail_input").val().trim();
+	var msg = $("#msg").val().trim();
+
+	var addContact = {
+		userName: name,
+		userEmail: email,
+		userMsg: msg
+	};
+
+	contactInfo.ref().push(addContact);
+
+	console.log(addContact.userName);
+	console.log(addContact.userEmail);
+	console.log(addContact.userMsg);
+
+	alert("thanks for the imput, we will get back to you soon!");
+});
 
 
-			
+	///-----YOUTUBE STUFF????------		
 // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
+      // var tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      // tag.src = "https://www.youtube.com/iframe_api";
+      // var firstScriptTag = document.getElementsByTagName('script')[0];
+      // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'M7lc1UVf-VE',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
+      // // 3. This function creates an <iframe> (and YouTube player)
+      // //    after the API code downloads.
+      // var player;
+      // function onYouTubeIframeAPIReady() {
+      //   player = new YT.Player('player', {
+      //     height: '390',
+      //     width: '640',
+      //     videoId: 'M7lc1UVf-VE',
+      //     events: {
+      //       'onReady': onPlayerReady,
+      //       'onStateChange': onPlayerStateChange
+      //     }
+      //   });
+      // }
 
       // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
+      // function onPlayerReady(event) {
+      //   event.target.playVideo();
+      // }
 
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
       //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
+      // 
+	// var done = false;
+      // function onPlayerStateChange(event) {
+      //   if (event.data == YT.PlayerState.PLAYING && !done) {
+      //     setTimeout(stopVideo, 6000);
+      //     done = true;
+      //   }
+      // }
+      // function stopVideo() {
+      //   player.stopVideo();
+      // }
 
 
 
-
-
+///------FACEBOOK LOGIN STUFF----////
 
 //facebook SDK script from developer site
 //APP ID: 494679177561741
