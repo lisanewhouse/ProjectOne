@@ -143,15 +143,48 @@ body{
   }
 }
 
-/*div.form
-{
-    display: block;
-    text-align: center;
+
+/*contact page css*/
+
+
+.contact-form {
+  width: 100%;
+  padding: 45px 10px 25px 31px;
+  margin-top: 30px;
+  background-color: #fff;
 }
-form
-{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}*/
+
+#name_input,
+#mail_input,
+#msg {
+  width: 95%;
+  color: black;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#msg {
+  height: 200px;
+  border-color: black;
+}
+
+.label-name,
+.label-msg,
+.label-mail {
+  font-size: 17px;
+  color: #bbc;
+}
+
+.contact-hr {
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #fff;
+  background-color: black;
+  border: 0;
+}

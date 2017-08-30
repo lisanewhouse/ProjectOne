@@ -48,14 +48,38 @@
   <br>
 
 <div class="container container-fluid">
-    <div class="row" >
-      <div class="col-sm-12 jumbotron jumbo jumbo-contact">
+  <div class="row" >
+    <div class="col-sm-12 jumbotron jumbo jumbo-contact">
 
-            
-          <br><br><br><br><br>
+      <div class="wrap">
+        <section class="row">
+          <div class="col-md-7">
+            <form class="panel contact-form">
+              <h1 class="contact-form-header">Contact</h1>
+              <hr class="contact-hr"/>
+              <div class="form-group">
+                <label class="label-name" for="name">Name</label>
+                <input type="text" id="name_input" name="user_name" />
+              </div>
+              <div class="form-group">
+                <label class="label-mail" for="mail">E-mail</label>
+                <input type="email" id="mail_input" name="user_mail" />
+              </div>
+              <div class="form-group">
+                <label class="label-msg" for="msg">Message</label><br />
+                <textarea id="msg" name="user_message_input" cols=600></textarea>
+              </div>
+              <button class="submit-btn">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-5"></div>
+        </section>
       </div>
+
+      <br><br><br><br><br>
     </div>
-  </div>   
+  </div>
+</div>   
 
 
 <footer class="navbar navbar-inverse navbar-fixed-bottom">
