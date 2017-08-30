@@ -58,7 +58,7 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 
-#results {
+#results, #trlr, #off, #mtrhme, #car, #mc, #err, #google, #NADAshow {
   display: none;
 }
 
