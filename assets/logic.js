@@ -304,16 +304,6 @@ F = Fifth Wheel
   if(vehicleID.includes("4YD") === true && vehicleID.charAt(9) == "1" && vehicleID.charAt(3) == "T" && serialNumber > 260000 && serialNumber < 269999 && vehicleID.substring(4,7) === "259") {
     final1 = "2001 KEYSTONE TRAILERS SPRINTER M-259 TRAVEL TRAILER";       
   }    
-    /*
-    4YDT2592119260443 = 2001 Keystone Rv Sprinter Series 
-4YD = Keystone
-T = Travel Trailer 
-1 = 2001 
-530000 - 549999 = Sprinter
-
-27 length?
-    
-    */
     
    if(vehicleID.includes("4YD") === true && vehicleID.charAt(9) == "Y") {
     final1 = "2000 KEYSTONE TRAILERS";       
@@ -698,47 +688,6 @@ $('#reset').click(function() { // reload page if any errors come up
 });
 });
 
-/*
-
-
-4YDF3602XDE780097  2013 Keystone Rv Alpine Fifth Wheel
-4YDT22R24FA421887  2015 Keystone Rv Bullet Series 
-4YDT34B22FD420044   2015 Keystone Rv Bullet Series 
-4YDF345287E771495  2007 Keystone Rv Everest Fifth Wheel 
-4YDT19926HT411381  2017 Keystone Rv Passport Series 
-4YDT32527GB450587  2016 Keystone Rv Outback Series 
-4YDT39L29HW260179  2017 Keystone Rv Retreat Series 
-4YDT2592119260443  2001 Keystone Rv Sprinter Series 
-4YDT23125GH920432  2016 Dutchmen Aspen Trail 
-4YDF329214D509169  2004 Keystone Rv Montana Series 
-4YDT27021F3103756  2015 Keystone Rv Springdale Series 
-4YDT335214701808  2004 Surveyor M-233t Sld 
-4YDF1211161215127  2006 Keystone Rv Everest Fifth Wheel 
-4YDF318278S507908  2008 Keystone Rv Cougar Fifth Wheel 
-4YDS37526GR800003  2016 Keystone Rv Raptor Fifth Wheel
-4YDF318258S507891  2008 Keystone Rv Cougar Fifth Wheel 
-4YDT31029GH92144  2016 Dutchmen Aspen Trail 
-4YDT30R29FD422601  2015 Keystone Rv Raptor Series 
-4YDT16F15HY930886  2001 Coachmen Pathfinder Series 
-4YDT2482XGK425466  2016 Keystone Rv Bullet Series 
-4YDF35523FE780125  2015 Keystone Rv Alpine Fifth Wheel 
-4YDT2652XEX410174  2014 Keystone Rv Passport Series 
-4YDT275297V271546  2007 Keystone Rv Vr1 Series 
-4YDT30R28HD422530  2017 Keystone Rv Cougar Series 
-4YDF2852XX4050045  1999 Keystone Rv Montana Fifth Wheel
-4YDT34B26FD423352  2014 Keystone Rv Bullet Series 
-4YDT28121S4921883  2015 Dutchmen Aspen Tr
-4YDT30B2X5E317410  2005 Hornet Unknown 
-4YDF35728D4730644  2013 Keystone Rv Mountaineer Fifth Wheel 
-4YDT29F20G1531396  2016 Keystone Rv Sprinter Series 
-4YDT3722133206813  2003 Keystone Rv Springdale Series 
-4YDF32R286J464770  2006 Keystone Rv Laredo Series
-
-
-
-
-
-*/
 
 
 
