@@ -35,6 +35,8 @@ $("#submit").on("click", function() {
 });
 
 
+
+
 	///-----YOUTUBE STUFF????------		
 // 2. This code loads the IFrame Player API code asynchronously.
       // var tag = document.createElement('script');
@@ -709,6 +711,119 @@ $('#reset').click(function() { // reload page if any errors come up
 
 
 });
+
+
+$(".service").on("click",function(e){
+    e.preventDefault();
+    var q= $(this).val();
+    //alert(q + "clicked");
+
+
+   function search(){
+    //clear result
+    $("#results").html("");
+    //$("#buttons").html("");
+    $.get(
+       "https://www.googleapis.com/youtube/v3/search",{
+        part:'snippet, id',
+        q:q,
+        type:'video',
+        key:'AIzaSyAuE6jyMYSA4A6qUwNAOs0ZRzQDNSX_BUY'
+       },
+       function(data){
+         var nextPageToken=data.nextPageToken;
+         var prevPAgeToken= data.prevPAgeToken;
+         console.log(data);
+         $.each(data.items, function(i,item){
+            var output = getOutput(item);
+            $("#results").prepend(output);
+         });
+       }
+      
+     );
+
+}
+function getOutput(item){
+  var videoId = item.id.videoId;
+  var title = item.snippet.title;
+  var description = item.snippet.description;
+  var thumb = item.snippet.thumbnails.high.url;
+  var channelTitle = item.snippet.channelTitle;
+  var videoDate = item.snippet.videoDate;
+  var output = '<li>'+
+  '<div class="list-left">'+
+  '<img src="'+thumb+'">'+
+  '</div>'+
+  '<div class="list-right">'+
+  '<h3>'+title+'</h3>'
+  '<small>by <span class="cTitle">'+ channelTitle+'</span> on'
+  + videoDate+'</small>'+'<p>'+ description+'</p>'+
+  '</div>'+'</li>'+'<div class="clearfix"></div>'+'';
+  return output;
+
+}
+search();
+  })
+var map;
+var infowindow;
+
+var request;
+var service;
+var markers = [];
+function initialize() {
+        var center = {lat: 30.5561932, lng: -97.8083887};
+
+       map = new google.maps.Map(document.getElementById('map'), {
+          center: center,
+          zoom: 13
+        });
+         request={
+          location:center,
+          radius:8047,
+          types:['dance studios']
+        };
+        infowindow= new google.maps.InfoWindow();
+         service= new google.maps.places.PlacesService(map);
+        service.nearbySearch(request,callback);
+
+       google.maps.event.addListener(map, 'rightclick', function(event) {
+          map.setCenter(event.latLng)
+          clearResults(markers)
+           request={
+          location:event.latLng,
+          radius:8047,
+          types:['dance studios']
+        };
+        });
+      }
+      function callback(results,status){
+        if(status ==  google.maps.places.PlacesServiceStatus.OK){
+          for (var i = 0; i <results.length; i++) {
+            
+         markers.push(createMarker(results[i]));
+        }
+      }
+    }
+    function createMarker(place){
+      var placeLoc = place.geometry.location;
+      var marker = new google.maps.Marker({
+        map:map,
+        position: place.geometry.location
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
+      return marker;
+    }
+    function clearResults(markers){
+      for (var m in markers){
+        markers[m].setMap(null)
+      }
+      markers=[]
+    }
+    
+// google.maps.event.addDomListener(window,'load',initialize);
 
 
 
